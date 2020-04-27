@@ -40,7 +40,7 @@ namespace EditPeople.Controllers
             return Json(p);
 
         }
-       
+       [HttpPost]
         public IActionResult AddPerson(Person p)
         {
             var db = new Peopledb(_connection);
