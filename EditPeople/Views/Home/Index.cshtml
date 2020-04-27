@@ -1,0 +1,43 @@
+﻿<div class="col-md-6 col-md-offset-3">
+    <button id="btn-add" class="btn btn-block btn-primary">Add Person</button>
+    <table class="table table-bordered table-hover table-striped" style="margin-top:25px" id="people-table">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Edit</th>
+        </tr>
+    </table>
+</div>
+<div class="modal" id="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 id="title">New Person</h4>
+            </div>
+            <div class="modal-body col-md-6">
+                <div>
+                    <input type="text" id="fname" placeholder="First Name" class="form-control" />
+                </div>
+                <div style="margin-top:25px">
+                    <input type="text" id="lname" placeholder="Last Name" class="form-control" />
+                </div>
+                <div style="margin-top:25px">
+                    <input type="text" id="personAge" placeholder="Age" class="form-control" />
+                </div>
+            </div>
+            <input type="hidden"id="id"/>
+            <div class="modal-footer" id="footer">
+                <button id="close"type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button id="add-save" class="btn btn-success" data-dismiss="modal">Save</button>
+                <button id="edit-save" class="btn btn-success" hidden data-dismiss="modal">Save Changes</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+@section Scripts
+{
+    <script src="~/js/People.js"></script>
+}
